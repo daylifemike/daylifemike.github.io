@@ -135,8 +135,8 @@ div pre.prettyprint { text-align:left; font-size:24px; line-height:1em; padding:
 
 #responsive div:nth-of-type(2) { font-size:55px; margin-bottom:0.5em; }
 
-#modular div:nth-of-type(2) { font-size:59px; }
-#modular div:nth-of-type(3) { font-size:59px; }
+#modular div:nth-of-type(2) { font-size:58px; }
+#modular div:nth-of-type(3) { font-size:58px; }
 #modular div:nth-of-type(4) { font-size:51px; }
 
 #fin div { -webkit-transform: translate(-50%, -50%) translate3d(840px, 345px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); }
