@@ -78,7 +78,10 @@ div pre.prettyprint { text-align:left; font-size:24px; line-height:1em; padding:
 #title { text-align:left; font-weight:bold; }
 #title div:nth-of-type(1) { font-size:179px; }
 #title div:nth-of-type(2) { font-size:89px; margin:5px 0; }
-#title div:nth-of-type(3) { font-size:157px; }
+#title div:nth-of-type(3) { font-size:65px; }
+
+.impress-on-title .step { opacity:0; }
+.impress-on-title #title { opacity:1; }
 
 #admin div:nth-of-type(1) { font-size:150px; }
 #admin div:nth-of-type(2) { font-size:78px; }
@@ -86,8 +89,10 @@ div pre.prettyprint { text-align:left; font-size:24px; line-height:1em; padding:
 #state-data div:nth-of-type(1) { font-size:82px; }
 #state-data div:nth-of-type(2) { font-size:86px; }
 
+/*
 #state-content div,
 #state-content img { -webkit-transform: translate(0, -75px); }
+*/
 #state-content div:nth-of-type(1) { font-size:82px; }
 #state-content div:nth-of-type(2) { font-size:86px; }
 
@@ -109,8 +114,10 @@ div pre.prettyprint { text-align:left; font-size:24px; line-height:1em; padding:
 
 #angular-bind-1 div:nth-of-type(1) { font-size:86px; }
 
+/*
 #angular-bind-2 div,
 #angular-bind-2 pre { -webkit-transform: translate(0, -216px); }
+*/
 #angular-bind-2 div:nth-of-type(1) { font-size:86px; }
 
 #angular-state div:nth-of-type(1) { font-size:65px; }
