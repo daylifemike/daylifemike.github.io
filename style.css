@@ -1,0 +1,139 @@
+html { overflow: hidden; }
+body { font-family: 'Open Sans', sans-serif; line-height: .8; font-size: 45px; }
+
+.background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: -moz-radial-gradient(50% 50%, farthest-side, #fff, #efefef);
+    background: -webkit-gradient(radial, 50% 50%, 250, 50% 50%, 750, from(#fff), to(#efefef));
+    z-index: 0;
+    opacity: 1;
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    font-style: normal;
+    color: #666;
+    cursor: pointer;
+}
+a:hover { color: #333;}
+
+.big { text-transform:uppercase; }
+.bold { font-weight:bold; }
+.margin { margin-bottom:0.2em; }
+.half { width:50%; margin:0 auto; display:block; }
+.col-2 { width:50%; float:left; }
+
+.title { font-size:100px; text-transform:uppercase; font-weight:bold; margin-bottom:0.2em; }
+
+blockquote {
+    text-align: justify;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+blockquote .author {
+    display: block;
+    text-align: right;
+    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+img { width:100%; }
+.img-wrap { margin: 0 auto; }
+.img-inline { display: inline-block; padding: 12px 3px; }
+.img-link { text-decoration: none; }
+.img-border { border: solid 1px #aaa; }
+
+
+/* COMMON STEP STYLES */
+
+.step {
+    text-align: center;
+    width: 1000px;
+    padding: 20px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+    
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+    
+    text-shadow: rgba(0,0,0,.01) 0 0 1px; /* Chrome @font-face anti-aliasing fix */
+}
+
+.step:not(.active) { opacity: 0.1; }
+
+div pre.prettyprint { text-align:left; font-size:24px; line-height:1em; padding:0.5em; }
+
+#title { text-align:left; font-weight:bold; }
+#title div:nth-of-type(1) { font-size:179px; }
+#title div:nth-of-type(2) { font-size:89px; margin:5px 0; }
+#title div:nth-of-type(3) { font-size:157px; }
+
+#admin div:nth-of-type(1) { font-size:150px; }
+#admin div:nth-of-type(2) { font-size:78px; }
+
+#state-data div:nth-of-type(1) { font-size:82px; }
+#state-data div:nth-of-type(2) { font-size:86px; }
+
+#state-content div,
+#state-content img { -webkit-transform: translate(0, -75px); }
+#state-content div:nth-of-type(1) { font-size:82px; }
+#state-content div:nth-of-type(2) { font-size:86px; }
+
+#state-permissions div:nth-of-type(1) { font-size:70px; }
+
+#state-datasets div:nth-of-type(1) { font-size:56px; }
+#state-datasets div:nth-of-type(2) { font-size:80px; }
+
+#state-multiple div:nth-of-type(1) { font-size:64px; }
+
+#angular img { width:383px; }
+#angular div:nth-of-type(1) { font-size:86px; }
+#angular div:nth-of-type(2) { font-size:65px; }
+#angular div:nth-of-type(3) { font-size:69px; }
+
+
+#angular-bind-0 div:nth-of-type(1) { font-size:86px; }
+#angular-bind-0 div:nth-of-type(2) { font-size:80px; }
+
+#angular-bind-1 div:nth-of-type(1) { font-size:86px; }
+
+#angular-bind-2 div,
+#angular-bind-2 pre { -webkit-transform: translate(0, -216px); }
+#angular-bind-2 div:nth-of-type(1) { font-size:86px; }
+
+#angular-state div:nth-of-type(1) { font-size:65px; }
+
+#angular-truth div:nth-of-type(1) { font-size:69px; }
+
+#sass > div:nth-of-type(1) { font-size:86px; }
+
+#sass-simple > div:nth-of-type(1) { font-size:86px; }
+#sass-simple > div:nth-of-type(2) { font-size:48px; margin-bottom:1em; }
+#sass-simple > div > div { font-size:30px; }
+
+#frontsite div:nth-of-type(1) { font-size:150px; }
+#frontsite div:nth-of-type(2) { font-size:81px; }
+
+#responsive div:nth-of-type(2) { font-size:55px; margin-bottom:0.5em; }
+
+#modular div:nth-of-type(2) { font-size:59px; }
+#modular div:nth-of-type(3) { font-size:59px; }
+#modular div:nth-of-type(4) { font-size:51px; }
+
+#fin div { -webkit-transform: translate(-50%, -50%) translate3d(840px, 345px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1); }
+
+.impress-on-fin .step { opacity:0.3; }
+.impress-on-fin #title { opacity:0.5; }
+.impress-on-fin #fin { opacity:1; }

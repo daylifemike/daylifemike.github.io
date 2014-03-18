@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>The Un-CMS.</title>
+    
+    <meta name="description" content="What The Heck Is Responsive Web Design? - an impress.js presentation">
+    <meta name="author" content="John Polacek" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,700italic,300,400,800' rel='stylesheet' type='text/css'>
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="prettify/prettify.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="background"></div>
+    
+    <div id="impress" class="impress-not-supported">
+
+        <div class="step" id="title" data-x="-1400" data-y="-50" data-rotate="-90" data-scale="6">
+            <div>Sochi 2014</div>
+            <div>White Label Solution</div>
+            <div>The Un-CMS</div>
+        </div>
+
+        <div class="step" id="admin" data-x="720" data-y="-2580" data-scale="2">
+            <div class="title">Admin</div>
+            <div>Lots of State Management</div>
+        </div>
+
+        <div class="step" id="state-data" data-x="250" data-y="-1810" data-scale="1">
+            <div class="title">Changes to the data</div>
+            <div class="margin">Saved . Editable . Edited</div>
+            <img src="images/state-data-edit.png"/>
+        </div>
+
+        <div class="step" id="state-content" data-x="1350" data-y="-1810" data-scale="1">
+            <div class="title">Changes to the data</div>
+            <div class="margin">Add . Remove</div>
+            <img src="images/state-data-add.png"/>
+        </div>
+
+        <div class="step" id="state-permissions" data-x="2450" data-y="-1810" data-scale="1">
+            <div class="title">Changes to permissions</div>
+            <img class="half" src="images/state-permissions.png"/>
+        </div>
+
+        <div class="step" id="state-datasets" data-x="3550" data-y="-1810" data-scale="1">
+            <div class="title">Differences between datasets</div>
+            <div class="margin">Saved . Edited . Published</div>
+            <img class="half" src="images/state-datasets.png"/>
+        </div>
+
+
+        <div class="step" id="state-multiple" data-x="4650" data-y="-1810" data-scale="1">
+            <div class="title">Multiple views of dataset</div>
+            <img src="images/state-multiple.png"/>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="step" id="angular" data-x="720" data-y="-950" data-scale="2">
+            <img class="margin" src="http://angularjs.org/img/AngularJS-large.png"/>
+            <div class="title">2-way data binding</div>
+            <div class="big bold margin">simple state management</div>
+            <div class="big bold">source-of-truth models</div>
+        </div>
+
+        <div class="step" id="angular-bind-0" data-x="250" data-y="-140" data-scale="1">
+            <div class="title">2-way data binding</div>
+            <div class="margin">Simple Example</div>
+            <hr>
+            <div id="example-out" class="margin">Hello {{ name }}!</div>
+            <input id="example-in" type="text"/>
+        </div>
+
+        <div class="step" id="angular-bind-1" data-x="1350" data-y="-140" data-scale="1">
+            <div class="title">2-way data binding</div>
+            <div>jQuery</div>
+<pre class="prettyprint">
+&lt;h1>Hello {{ name }}!&lt;/h1>
+&lt;input type="text"/>
+
+&lt;script>
+  $(function(){
+    var name = null;
+    var $output = $('h1');
+    var $input = $('input');
+    var template = $output.text();
+
+    function updateName(value){
+      name = value;
+      $output.text(template.replace('{{ name }}', value));
+    }
+
+    $input.on('keyup', function(){
+      updateName($(this).val());
+    });
+  });
+&lt;/script>
+</pre>
+        </div>
+
+        <div class="step" id="angular-bind-2" data-x="2450" data-y="-140" data-scale="1">
+            <div class="title">2-way data binding</div>
+            <div>Angular</div>
+<pre class="prettyprint">
+&lt;h1>Hello {{ name }}!&lt;/h1>
+&lt;input type="text" ng-model="name"/>
+</pre>
+        </div>
+
+        <div class="step" id="angular-state" data-x="3550" data-y="-140" data-scale="1">
+            <div class="title">Simple State Management</div>
+            <pre class="prettyprint">angular.equals(a, b);</pre>
+            <pre class="prettyprint">&lt;input type="text" ng-disabled="isReadOnly"/></pre>
+            <pre class="prettyprint">&lt;a ng-class="{'active': isActivePage('products')}">Products&lt;/a></pre>
+        </div>
+
+        <div class="step" id="angular-truth" data-x="4650" data-y="-140" data-scale="1">
+            <div class="title">Source-of-truth Models</div>
+            <pre class="prettyprint">&lt;li ng-repeat="(item in list | filter:{condition: true}"></pre>
+            <pre class="prettyprint">&lt;li ng-repeat="(item in list | filter:{condition: false}"></pre>
+            <img src="images/state-multiple.png"/>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="step" id="sass" data-x="720" data-y="1000" data-scale="2">
+            <div class="title">SASS</div>
+            <div class="margin">Simple CSS . Full Customization</div>
+            <img src="images/sass.png"/>
+        </div>
+
+        <div class="step" id="sass-simple" data-x="2300" data-y="1000" data-scale="1">
+            <div class="title">Simple CSS</div>
+            <div>There's no <i>default-style.css</i>, only <i>customer.css</i></div>
+            <div class="col-2">
+                <div>customer-a.css</div>
+<pre class="prettyprint">
+body {
+  background-color: #ffffff;
+  font-family: 'Arial';
+  font-size: 13px;
+  line-height: 1.5em;
+  color: #333333;
+}</pre>
+            </div>
+            <div class="col-2">
+                <div>customer-b.css</div>
+<pre class="prettyprint">
+body {
+  background-color: #cdcdcd;
+  font-family: 'Georgia';
+  font-size: 11px;
+  line-height: 1.4em;
+  color: #000000;
+}</pre>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="step" id="frontsite" data-x="720" data-y="2050" data-scale="2">
+            <div class="title">Frontsite</div>
+            <div>Lots of layout options</div>
+        </div>
+
+        <div class="step" id="markup" data-x="250" data-y="2630" data-scale="1">
+            <div class="title">Markup</div>
+            <div class="margin">Needs to support every layout imaginable</div>
+            <div>... at least the most common variants</div>
+        </div>
+
+        <div class="step" id="markup-1" data-x="-150" data-y="2800" data-scale="0.2">
+            <img src="images/layout-3.png"/>
+        </div>
+
+        <div class="step" id="markup-2" data-x="50" data-y="2800" data-scale="0.2">
+            <img src="images/layout-2.png"/>
+        </div>
+
+        <div class="step" id="markup-3" data-x="250" data-y="2800" data-scale="0.2">
+            <img src="images/layout-5.png"/>
+        </div>
+
+        <div class="step" id="markup-4" data-x="450" data-y="2800" data-scale="0.2">
+            <img src="images/layout-4.png"/>
+        </div>
+
+        <div class="step" id="markup-5" data-x="650" data-y="2800" data-scale="0.2">
+            <img src="images/layout-1.png"/>
+        </div>
+
+        <div class="step" id="responsive" data-x="1350" data-y="2630" data-scale="1">
+            <div class="title">Responsive</div>
+            <div class="margin">Fluid layout looks good on all devices</div>
+            <img src="images/responsive.png"/>
+        </div>
+
+        <div class="step" id="modular" data-x="2450" data-y="2630" data-scale="1">
+            <div class="title">Modular</div>
+            <div class="margin">The site is built out of components</div>
+            <div class="margin">Style it once, it's styled everywhere</div>
+            <div>A page template is just a list of modules</div>
+        </div>
+
+        <div class="step" id="fin" data-x="1400" data-y="0" data-scale="8">
+            <div>Thank you</div>
+        </div>
+        
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="prettify/prettify.js"></script>
+    <script src="impress.js"></script>
+    <script>
+        $(function () {
+            prettyPrint();
+            impress().init();
+
+
+            var $output = $('#example-out');
+            var $input = $('#example-in');
+            var template = $output.text();
+            $input.on('keyup', function(){
+                var value = $(this).val();
+                $output.text(template.replace('{{ name }}', value));
+            });
+            $(document).on('keyup', function(e){
+                if (e.which === 81) {
+                    $input.focus();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
